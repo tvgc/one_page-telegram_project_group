@@ -1,5 +1,7 @@
 /*=============== HEADER ===============*/
-
+function toggleMenu() {
+    document.querySelector('.nav__menu').classList.toggle('show')
+}
 
 /*=============== HOME ===============*/
 

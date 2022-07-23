@@ -64,7 +64,7 @@ h1, h2, h3 {
     color: var(--second-color);
 }
 
-ul {
+ul, li {
     list-style: none;
 }
 
@@ -106,9 +106,192 @@ button {
 }
 
 /*=============== HEADER ===============*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--fourth-color);
+}
+
+.nav, .nav__menu, .nav__toggle-container, .nav__user {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo ,.nav__toggle-container i {
+    font-size: var(--bigger-size);
+}
+
+.nav {
+    height: var(--header-height);
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-weight: var(--font-semi-bold);
+    color: var(--second-color);
+}
+
+.nav__menu {
+    position: absolute;
+    top: -420px;
+    left: -24px;
+    width: 100vw;
+    justify-content: center;
+    padding: 50px 0px;
+    background-color: var(--fourth-color);
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.nav__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: var(--biggest-font-size);
+    font-weight: 400;
+    color: var(--third-color);
+}
+
+.nav__toggle-container {
+    gap: 30px;
+}
+
+.nav__toggle:hover {
+    cursor: pointer;
+}
+
+.nav__user {
+    display: none;
+}
+
+/*toggle*/
+.nav__menu.show {
+    top: var(--header-height);
+}
+
+/*breackpoint*/
+@media screen and (min-width: 860px) {
+    .nav__menu {
+        position: static;
+        justify-content: center;
+        background-color: var(--fourth-color);
+        max-width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__link {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--third-color);
+    }
+
+    .nav__user {
+        display: flex;
+        gap: 45px;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-bold);
+    }
+
+    .nav__login {
+        color: var(--first-color);
+    }
+
+    .nav__member {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 50px;
+        text-align: center;
+        color: white;
+        background-color: var(--first-color);
+        border-radius: 5px;
+    }
+
+    .nav__toggle-container {
+        display: none;
+    }
+}
 
 
 /*=============== HOME ===============*/
+.home{
+    padding-top: 191px;
+
+}
+
+.home__container {
+    /* padding-top: 191px; */
+    display: grid;
+}
+
+.home__title {
+    font-size: var(--main-title);
+    line-height: 3rem;
+    margin-bottom: 35px;
+}
+
+.home__subtitle, .home__btn-quote, .home__btn-learn {
+    margin-bottom: 30px;
+}
+
+.home__btn-quote,
+.home__btn-learn {
+    font-weight: var(--font-semi-bold);
+    font-size: var(--small-font-size);
+    padding: 14px 50px;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}    
+
+.home__btn-quote {
+    background-color: var(--first-color);
+    color: white;
+}
+
+.home__btn-learn {
+    border: var(--first-color) solid 1px;
+}
+
+.home__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/*breackpoint*/
+@media screen and (min-width: 860px) {
+    .home{
+        padding-top: 150px;
+        height: 100vh;
+        background-color: var(--fourth-color);
+    }
+
+    .home__container {
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        /* height: 100vh;
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center; */
+    }
+}
+
 
 
 /*=============== FEATURES ===============*/

@@ -16,15 +16,70 @@
 <body>
 
     <!--=============== HEADER ===============-->
-    <header>
+    <header class="header">
+        <nav class="nav container">
 
+            <div class="nav__logo">BrandName</div>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Product</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle-container">
+                <div class="nav__glass">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="nav__cart">
+                    <i class='bx bx-cart'></i>
+                </div>
+
+                <div class="nav__toggle" onclick="toggleMenu()">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+
+            </div>
+
+            <div class="nav__user">
+                <a class="nav__login">Login</a>
+                <a class="nav__member">Become a member →</a>
+            </div>
+
+        </nav>
     </header>
 
     <!--=============== MAIN ===============-->
     <main>
 
+        <!--=============== HOME ===============-->
+        <section class="home section">
+
+            <div class="home__container container">
+                <div class="home__data">
+                    <h1 class="home__title section-title">Your Financial<br> Assistance</h1>
+                    <p class="section-subtitle home__subtitle">
+                        We know how large objects will act,<br> but things on a small scale.
+                    </p>
+                    <button class="home__btn-quote">Get Quote Now</button>
+                    <button class="home__btn-learn">Learn More</button>
+                </div>
+                
+                <div class="home__img-container">
+                    <img class="home__img" src="assets/images/cellphone.png" alt="Cellphone">
+                </div>
+            </div>
+            
+            
+        </section>
+
         <!--=============== FEATURES ===============-->
         <section>
+            
+            </div>
             
         </section>
 
@@ -54,5 +109,8 @@
     <footer>
 
     </footer>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
