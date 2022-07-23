@@ -133,7 +133,7 @@ button {
     margin-bottom:20px;
 }
 
-feature__description{
+.feature__description{
     font-size: var(--small-font-size);
 }
 
@@ -167,10 +167,17 @@ feature__description{
 }
 
 
-.feature__cads:hover+.feature__icon{
+
+
+.select__feature{
     background: var(--first-color);
     color: #fff;
 }
+
+.select__icon{
+    color: #fff;
+}
+
 /*=============== TESTIMONIALS ===============*/
 /*=============== CONTENT ===============*/
 
