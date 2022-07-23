@@ -55,6 +55,7 @@ html {
 }
 
 body {
+    background-color: #FAFAFAFA;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--third-color);
@@ -122,6 +123,64 @@ button {
 
 /*=============== PRICING ===============*/
 
+.c-pricing {
+   margin-top: 75px ; 
+}
+
+.c-pricing-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.pricing-title {
+    font-size: var(--title-font-size);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-text {
+    width:270px;
+}
+
+.pricing-text p {
+    text-align: center;
+}
+
+.c-cards {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    background-color:#fff;
+    border-radius: 10px;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card-text {
+    width: 165px;
+    margin-bottom: 35px;
+}
+
+.card-text p {
+    text-align: center;
+}
 
 /*=============== CONTACT ===============*/
 
