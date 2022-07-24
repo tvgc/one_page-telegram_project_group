@@ -109,7 +109,9 @@ button {
 
 
 /*=============== HOME ===============*/
-
+object{
+    background: #fff;
+}
 
 /*=============== FEATURES ===============*/
 .feature .feature__container{
@@ -156,6 +158,7 @@ button {
     border-radius: 5px;
     margin: 20px 0;
     padding: 40px;
+    cursor: pointer;
 }
 
 .img{
@@ -171,11 +174,17 @@ button {
 .select__feature{
     background: var(--first-color);
     color: #fff;
+    transition: 1s;
+}
+
+.select__feature i{
+
+    color: #fff;
 }
 
 .select__icon{
-    color: #fff;
 }
+
 
 /*breackpoint*/
 @media screen and (min-width: 860px) {
@@ -188,6 +197,10 @@ button {
     .img{
         display: inline-block;
         color: #fff;
+    }
+
+    .select__feature img{
+          filter: brightness(100);
     }
 
     .feature__icon{

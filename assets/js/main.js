@@ -15,14 +15,9 @@ function activeCard(){
     this.classList.add('select__feature')
 }
 
-function activeIcon(){
-    selectIcon.forEach(i => i.classList.add('select__icon'))
-    this.classList.remove('select__icon')
-}
 
 SelectCard.forEach(l => l.addEventListener('click', activeCard))
 
-selectIcon.forEach(i => i.addEventListener('click', activeIcon))
 /*=============== TESTIMONIALS ===============*/
 
 
