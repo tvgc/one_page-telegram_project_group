@@ -6,9 +6,9 @@
 
 /*=============== FEATURES ===============*/
 
-console.log('pegou')
+
 const SelectCard = document.querySelectorAll('.feature__cads')
-      selectIcon = document.querySelectorAll('.feature__icon')
+let selectIcon = document.querySelectorAll('.feature__icon')
 
 function activeCard(){
     SelectCard.forEach(l => l.classList.remove('select__feature'))
@@ -16,8 +16,8 @@ function activeCard(){
 }
 
 function activeIcon(){
-    selectIcon.forEach(i => i.classList.remove('select__icon'))
-    this.classList.add('select__icon')
+    selectIcon.forEach(i => i.classList.add('select__icon'))
+    this.classList.remove('select__icon')
 }
 
 SelectCard.forEach(l => l.addEventListener('click', activeCard))
