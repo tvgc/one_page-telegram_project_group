@@ -169,7 +169,7 @@ button {
 .cards-list {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 272px;
     justify-content: center;
     align-items: center;
     padding: 50px 40px;
@@ -224,6 +224,11 @@ button {
     font-weight: var(--font-semi-bold);
 }
 
+.align-button {
+    display: flex;
+    flex-direction: column;
+}
+
 .text-information {
     display: flex;
     align-items: center;
@@ -267,6 +272,13 @@ button {
 
 
 /*=============== RESPONSIVITY ===============*/
+
+@media screen and (min-width: 360px) {
+    .cards-list {
+        width: 320px;
+    }
+}
+
 @media screen and (min-width: 960px) {
     .container {
         margin-left: auto;
@@ -275,5 +287,25 @@ button {
 
     .pricing-title {
         font-weight: var(--font-bold);
+    }
+
+    .pricing-button {
+        align-items: start;
+    }
+
+    .align-button {
+        flex-direction: column-reverse;
+    }
+
+    .pricing-button {
+        margin-bottom:36px;
+    }
+
+    .text-information:nth-last-child(1) {
+        margin: 0;
+    }
+
+    .c-wrapper {
+        padding: 0;
     }
 }
