@@ -173,20 +173,27 @@ button {
 
 
 .card .card_item .card_content{
+    position: relative;
+    top: 290px;
+    left: 0;
     padding: 20px;
-    margin-top: 301px;
+    
 }
 
 .card .card_item .card_content h3, h6, a{
     margin-top: 5px;
     color: #FAFAFAFA;
 }
-    .card .card_item .card_content a{
-    margin-top: 15px;
-    display: inline-block;
-    background-color: #23A6F0;
-    padding: 8px 16px;
-    border-radius: 25px;
+
+
+.card .card_item .card_content a{
+margin-top: 15px;
+display: inline-block;
+background-color: #23A6F0;
+padding: 10px 20px;
+border-radius: 25px;
+text-transform: lowercase;
+font-weight: 400;
     
     
 }
