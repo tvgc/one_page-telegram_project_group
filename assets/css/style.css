@@ -174,20 +174,22 @@ button {
 
 .card .card_item .card_content{
     position: relative;
-    top: 290px;
+    top: 270px;
     left: 0;
     padding: 20px;
     
 }
 
 .card .card_item .card_content h3, h6, a{
-    margin-top: 5px;
     color: #FAFAFAFA;
 }
 
+.card .card_item .card_content h6{
+    margin-bottom: 30px;
+}
 
 .card .card_item .card_content a{
-margin-top: 15px;
+margin-top: 20px;
 display: inline-block;
 background-color: #23A6F0;
 padding: 10px 20px;
