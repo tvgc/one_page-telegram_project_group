@@ -118,7 +118,43 @@ button {
 
 
 /*=============== CONTENT ===============*/
+/* .section_content{
+    display: flex;
+    justify-content: center;
+} */
 
+.section_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 607px;
+    height: 107px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 15px;
+    gap: 30px;
+
+}
+
+
+.card .card_itens {
+    border: 1px solid black;
+    width: 322px;
+    height: 452px;
+
+}
+
+.card_itens .card_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /*=============== PRICING ===============*/
 
