@@ -159,7 +159,7 @@ button {
 }
 
 .card #img1 {
-    background-image: url(/assets/imgs/post.1.png);
+    position: absolute;
 }
 .card #img2 {
     background-image: url(/assets/imgs/post.2.png);
@@ -170,6 +170,7 @@ button {
 .card  #img4 {
     background-image: url(/assets/imgs/post.4.png);
 }
+
 
 
 .card .card_item .card_content{
