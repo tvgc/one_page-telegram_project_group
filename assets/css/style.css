@@ -122,6 +122,7 @@ object{
 }
 
 .feature__container{
+    margin: 100px 0;
     height: 100vh;
 }
 
@@ -159,6 +160,7 @@ object{
     margin: 20px 0;
     padding: 40px;
     cursor: pointer;
+    transition: 2s;
 }
 
 .img{
@@ -188,6 +190,15 @@ object{
 
 /*breackpoint*/
 @media screen and (min-width: 860px) {
+
+    .featur{
+        width: 100%;
+    }
+
+    .select__feature{
+        margin: 0 auto;
+    }
+
     .cards__container{
         display: flex;
         flex-direction: row;
@@ -220,12 +231,44 @@ object{
 
 
 /*=============== FOOTER ===============*/
-
-
-/*=============== RESPONSIVITY ===============*/
-@media screen and (min-width: 960px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.footer__description{
+    margin: 30px 0;
+}
+
+.footer__tetle{
+    color: var(--second-color);
+    font-weight: var(--font-bold);
+    font-size: var(--title-font-size);
+    margin-bottom: 10px;
+}
+
+.footer__icon{
+    margin: 20px 0;
+}
+
+.icon{
+    font-size: 24px;
+    color: var(--first-color);
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+.list__item{
+    margin-bottom: 10px;
+}
+
+
