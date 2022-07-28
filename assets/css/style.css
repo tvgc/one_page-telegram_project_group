@@ -393,7 +393,6 @@ button {
 }
 
 /*=============== TESTIMONIALS ===============*/
-
 #testimonials {
     display: flex;
     width: 100%;
@@ -484,19 +483,19 @@ justify-content: center;
 }
 
 .card #img1 {
-    background-image: url(/assets/imgs/post.1.png);
+    background-image: url('/assets/imgs/post.1.png');
 }
 
 .card #img2 {
-    background-image: url(/assets/imgs/post.2.png);
+    background-image: url('/assets/imgs/post.2.png');
 }
 
 .card #img3 {
-    background-image: url(/assets/imgs/post.3.png);
+    background-image: url('/assets/imgs/post.3.png');
 }
 
 .card  #img4 {
-    background-image: url(/assets/imgs/post.4.png);
+    background-image: url('/assets/imgs/post.4.png');
 }
 
 .card .card_item .card_content{
@@ -709,7 +708,6 @@ justify-content: center;
     border: 2px solid #E6E6E6;
     border-radius: 5px 0px 0px 5px;
     text-align: center;
-
 }
 .contact--input input::placeholder {
     font-size: var(--small-font-size);
@@ -847,7 +845,7 @@ justify-content: center;
 @media screen and (min-width: 860px) {
     .home{
         padding-top: 150px;
-        height: 100vh;
+        /* height: 100vh; */
         background-color: var(--fourth-color);
     }
 
