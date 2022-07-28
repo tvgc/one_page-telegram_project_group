@@ -109,9 +109,7 @@ button {
 
 
 /*=============== HOME ===============*/
-object{
-    background: #fff;
-}
+
 
 /*=============== FEATURES ===============*/
 .feature .feature__container{
@@ -188,37 +186,7 @@ object{
 }
 
 
-/*breackpoint*/
-@media screen and (min-width: 860px) {
 
-    .featur{
-        width: 100%;
-    }
-
-    .select__feature{
-        margin: 0 auto;
-    }
-
-    .cards__container{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .img{
-        display: inline-block;
-        color: #fff;
-    }
-
-    .select__feature img{
-          filter: brightness(100);
-    }
-
-    .feature__icon{
-        display: none;
-    }
-
-}
 
 /*=============== TESTIMONIALS ===============*/
 /*=============== CONTENT ===============*/
@@ -271,4 +239,44 @@ object{
     margin-bottom: 10px;
 }
 
+/*breackpoint*/
+@media screen and (min-width: 860px) {
 
+    .featur{
+        width: 100%;
+    }
+
+    .select__feature{
+        margin: 0 auto;
+    }
+
+    .cards__container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .img{
+        display: inline-block;
+        color: #fff;
+    }
+
+    .select__feature img{
+          filter: brightness(100);
+    }
+
+    .feature__icon{
+        display: none;
+    }
+
+    .footer{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 5px;
+       padding: 20px;
+       justify-items: center;
+       align-items: center;
+
+    }
+
+}
