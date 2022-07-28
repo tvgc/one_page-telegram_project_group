@@ -483,19 +483,19 @@ justify-content: center;
 }
 
 .card #img1 {
-    background-image: url('/assets/imgs/post.1.png');
+    background-image: url('/assets/imgs/post1.png');
 }
 
 .card #img2 {
-    background-image: url('/assets/imgs/post.2.png');
+    background-image: url('/assets/imgs/post2.png');
 }
 
 .card #img3 {
-    background-image: url('/assets/imgs/post.3.png');
+    background-image: url('/assets/imgs/post3.png');
 }
 
 .card  #img4 {
-    background-image: url('/assets/imgs/post.4.png');
+    background-image: url('/assets/imgs/post4.png');
 }
 
 .card .card_item .card_content{
