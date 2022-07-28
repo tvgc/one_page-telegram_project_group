@@ -55,6 +55,7 @@ html {
 }
 
 body {
+    background-color: #FAFAFAFA;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--third-color);
@@ -591,8 +592,149 @@ font-weight: 400;
 
 
 /*=============== PRICING ===============*/
+.c-pricing {
+   margin-top: 75px ; 
+}
 
+.c-pricing-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
 
+.pricing-title {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-regular);
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-text {
+    width:270px;
+}
+
+.pricing-text p {
+    text-align: center;
+}
+
+.c-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+    gap: 0 32px;
+}
+
+.c-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    background-color:#fff;
+    border-radius: 10px;
+    border: 1px solid var(--first-color);
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    width: 165px;
+    margin-bottom: 35px;
+}
+
+.card-text p {
+    text-align: center;
+}
+
+.c-monthly {
+    display: flex;
+    gap: 0 10px;
+    color: var(--first-color);
+    margin-bottom: 35px;
+}
+
+.monthly-value {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    font-weight: var(--font-bold);
+}
+
+.c-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.values-currency {
+    font-size: 0.875rem;
+    font-weight: var(--font-bold);
+
+}
+
+.values-month {
+    font-weight: var(--font-semi-bold);
+}
+
+.align-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-information {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 15px;
+}
+
+.text-information p {
+    font-size: 0.875rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--second-color);
+}
+
+.bx {
+    color: var(--third-color);
+}
+
+.bx.success {
+    color: #2DC071;
+}
+
+.pricing-button {
+    width: 246px;
+    height: 52px;
+    background-color: var(--first-color);
+    color: #fff;
+    border-radius: 5px;
+
+    margin-top: 35px ;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pricing-button:hover {
+    background-color: #1e90d1;
+}
 /*=============== CONTACT ===============*/
 
 
@@ -645,10 +787,39 @@ font-weight: 400;
     }
 }
 
+@media screen and (min-width: 360px) {
+    .cards-list {
+        width: 320px;
+    }
+}
+
 @media screen and (min-width: 960px) {
     .container {
         margin-left: auto;
         margin-right: auto;
     }
-}
 
+    .pricing-title {
+        font-weight: var(--font-bold);
+    }
+
+    .pricing-button {
+        align-items: start;
+    }
+
+    .align-button {
+        flex-direction: column-reverse;
+    }
+
+    .pricing-button {
+        margin-bottom:36px;
+    }
+
+    .text-information:nth-last-child(1) {
+        margin: 0;
+    }
+
+    .c-wrapper {
+        padding: 0;
+    }
+}
