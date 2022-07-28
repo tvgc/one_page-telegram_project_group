@@ -334,14 +334,114 @@ button {
     }
 }
 
-
-
 /*=============== FEATURES ===============*/
+.feature .feature__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.feature__container{
+    margin: 100px 0;
+    height: 100vh;
+}
+
+.feature__tittle{
+    font-size: var(--title-font-size);
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom:20px;
+}
+
+.feature__description{
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.cards__container{
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature__cads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 136px;
+    background: var(--fourth-color);
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 40px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.img{
+    display: none;
+}
+
+.feature__icon{
+    font-size: 50px;
+    color: var(--first-color);
+    margin-bottom: 10px;
+}
+
+.select__feature{
+    background: var(--first-color);
+    color: #fff;
+    transition: 1s;
+}
+
+.select__feature i{
+
+    color: #fff;
+}
+
+.select__icon{
+}
+
+
+/*breackpoint*/
+@media screen and (min-width: 860px) {
+
+    .featur{
+        width: 100%;
+    }
+
+    .select__feature{
+        margin: 0 auto;
+    }
+
+    .cards__container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .img{
+        display: inline-block;
+        color: #fff;
+    }
+
+    .select__feature img{
+          filter: brightness(100);
+    }
+
+    .feature__icon{
+        display: none;
+    }
+
+}
 
 /*=============== TESTIMONIALS ===============*/
-
-
 /*=============== CONTENT ===============*/
 
 
@@ -352,12 +452,44 @@ button {
 
 
 /*=============== FOOTER ===============*/
-
-
-/*=============== RESPONSIVITY ===============*/
-@media screen and (min-width: 960px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.footer__description{
+    margin: 30px 0;
+}
+
+.footer__tetle{
+    color: var(--second-color);
+    font-weight: var(--font-bold);
+    font-size: var(--title-font-size);
+    margin-bottom: 10px;
+}
+
+.footer__icon{
+    margin: 20px 0;
+}
+
+.icon{
+    font-size: 24px;
+    color: var(--first-color);
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+.list__item{
+    margin-bottom: 10px;
+}
+
+
