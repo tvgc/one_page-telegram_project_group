@@ -1005,6 +1005,6 @@ footer {
         gap: 5px;
         padding: 20px;
         justify-items: center;
-        align-items: center;
+        align-items: baseline;
     }
 }
