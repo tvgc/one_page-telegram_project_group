@@ -138,6 +138,7 @@ button {
     height: var(--header-height);
     position: relative;
     justify-content: space-between;
+    background-color: var(--fourth-color);
 }
 
 .nav__logo:hover,
@@ -799,12 +800,15 @@ justify-content: center;
 }
 
 /*=============== FOOTER ===============*/
+footer {
+    background-color: #FFFFFF;
+}
+
 .footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #FFFFFF;
 }
 
 .footer__description{
