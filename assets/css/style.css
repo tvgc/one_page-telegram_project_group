@@ -565,7 +565,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     margin-bottom: 140px;
-    gap: 50px;
+    gap: 30px;
 }
 
 .c-cards {
@@ -849,7 +849,7 @@ footer {
 .footer__tetle{
     color: var(--second-color);
     font-weight: var(--font-bold);
-    font-size: var(--title-font-size);
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
