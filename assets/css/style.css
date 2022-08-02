@@ -108,7 +108,6 @@ button {
     text-align: center;
     color: var(--third-color);
     font-size: var(--small-font-size);
-    line-height: 1.2rem;
 }
 
 .description-margin-bottom {
