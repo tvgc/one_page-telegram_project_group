@@ -943,7 +943,7 @@ footer {
 /* contact responsive */
 @media (max-width: 960px) {
 
-    .contact--input input {
+    .contact__input input {
         min-width: 250px ;
     }
 }
@@ -969,7 +969,7 @@ footer {
         justify-content: center;
     }
     .contact__input input {
-        width: 60%;
+       width: 60%;
     }
 }
 
